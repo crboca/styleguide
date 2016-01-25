@@ -1,41 +1,52 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,400italic,700,700italic);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Droid+Serif:400,400italic,700,700italic|Pinyon+Script);
 
 body{
 	background-color: #fff;
-	margin:0; 
-}
-
-#fondo{
-	width:100%;
-	background-color:#f8f4f4;
-	margin: 0;
+	margin:0;
 }
 
 /* HEADER Y NAVEGADOR */
 
 #cap{
 	width:100%;
-	height:100px;
-	background-color:#A9A9A9;
-	margin: 0;
-	position: fixed;
+	background-color:#939393;
+	position:fixed;
 	top: 0;
+	z-index: 2;
+}
 
+.nom{
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 38px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: #e0d4c9;
+}
+
+.subtitol{
+	font-family: "Montserrat", sans-serif; 
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 16px;
+	color: #e0d4c9;
+	margin-top: 5px;
+	margin-bottom: 45px;
+	text-align: center;
 }
 
 #cap a{
+	padding-left: 5px;
+	padding-right: 5px;
 	text-decoration: none;
-	padding: 10px;
-}
-#cap a:hover {
-	color: #fff; 
+	font-family: "Droid Serif", serif;
+	font-weight: 400;
+	font-size: 16px;
 }
 
-img.logo{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#cap a:hover {
+	color: #fff; 
 }
 
 #menu{
@@ -44,107 +55,109 @@ img.logo{
 
 #menu ul{
 	padding: 0;
-	list-style:none;
+	margin-top: 40px;
+	margin-bottom: 5px;
 }
 
 #menu ul li{
 	display:inline;
-	color:#000;
-	
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0;
 }
 
+/* CONTENIDOS */
+
+#fondo{
+	width:800px;
+	background-color:#fff;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-top: 100px;
+}
 
 .cabecera{
-	text-align: center;
-	padding-top: 130px;
+	font-family: "Droid Serif", serif; 
+	font-weight: 400;
+	font-size: 16px;
+	color: #939393;
+	border-bottom-style: solid;
+	border-bottom-color: #939393;
+	margin-top: -100px;
+	padding-top: 200px;
+	
 }
-
-
 
 h1{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 55px;
-	line-height: 40px;
 	color: #e0d4c9;
+	line-height: 55px;
 }
 
 h2{
-	font-family: "Montserrat", sans-serif; 
+	font-family: "Droid Serif", serif; 
 	font-weight: 400;
 	font-size: 48px;
-	line-height: 44px;
 	color: #e0d4c9;
+	line-height: 48px;
 }
 
 h3{
 	font-family: "Montserrat", sans-serif; 
 	font-weight: 700;
 	font-size: 38px;
-	line-height: 38px;
 	color: #e0d4c9;
+	line-height: 38px;
 }
 
 h4{
-	font-family: "Montserrat", sans-serif; 
+	font-family: "Droid Serif", serif; 
 	font-weight: 400;
 	font-size: 31px;
-	line-height: 31px;
 	color: #e0d4c9;
+	line-height: 31px;
 }
 
 h5{
 	font-family: "Montserrat", sans-serif; 
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 24px;
-	line-height: 24px;
 	color: #e0d4c9;
+	line-height: 24px;
 }
 
 h6, ul, li{
-	font-family: "Montserrat", sans-serif; 
+	font-family: "Droid Serif", serif; 
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 16px;
 	color: #e0d4c9;
+	line-height: 23px;
 }
 
 p, section{
 	font-family: "Droid Serif", serif;
-	font-size: 12px;
-	line-height: 28px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 23px;
 	color: #e0d4c9;
 }
 
 a{
 	color: #e0d4c9;
-	
 }
 
 mark{
 	background-color: #e0d4c9;
-	color: #979493;
+	color: #939393;
 }
 
 blockquote{
 	font-size: 16px;
-}
-
-ul, li{
-	font-family: "Montserrat", serif;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 28px;
-	color: #e0d4c9;
-	list-style: none;
-}
-
-dt{
-	font-family: "Montserrat", serif;
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 28px;
-	color: #e0d4c9;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .cuadrados{
@@ -153,20 +166,111 @@ dt{
 
 .cuadrado-uno{
 	height: 50px;
-	width: 200px;
-	background-color: #fff;
-	display: inline-block;
+	width: 350px;
+	background-color: #939393;
+	display: block;
 	text-align: center;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
 }
 
 .cuadrado-dos{
 	height: 50px;
-	width: 200px;
-	background-color: #000;
-	display: inline-block;
-	color: #fff;
+	width: 350px;
+	background-color: #e0d4c9;
+	display: block;
 	text-align: center;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
+	z-index: 1;
+}
+
+.cuadrado-tres{
+	height: 50px;
+	width: 350px;
+	background-color: #f8f4f4;
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.cuadrado-cuatro{
+	height: 50px;
+	width: 350px;
+	background-color: #575453;
+	display: block;
+	text-align: center;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.cuadrados h6{
+	color: #737373;
+	margin-top: 15px;
+}
+
+.botones {
+	width: 100%;
+    background-color: #fff;
+}
+
+.activado{
+	background-color: #e0d4c9;
+	display: block;
+	width: 250px;
+	border:none;
+	border-radius: 20px;
+	padding: 20px 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 23px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.desactivado{
+	background-color: #e3e3e3;
+	width: 250px;
+	display: block;
+	border:none;
+	border-radius: 20px;
+	padding: 20px 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: #737373;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+
+#contacto section{
+	margin-bottom: 100px;
 }
 
 
